@@ -19,7 +19,7 @@ router.get("/", function (req, res, next) {
   res.render("index", { title: "Express", messages: messages });
 });
 
-router.post("/new", function (req, res) {
+router.get("/new", function (req, res) {
   res.render("form", { title: "New Message" });
 });
 
